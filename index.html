@@ -1,133 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Andrew Franklin | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body class="page-load">
-  <!-- HEADER -->
-  <header class="fade-slide-in">
-    <div class="container header-content">
-      <img src="https://muhlenbergsports.com/images/2024/8/25/FBfranklin24_qIZ37.jpg?width=300"
-        alt="Andrew Franklin Headshot" class="profile-img" />
 
-      <div class="intro-text">
-        <h1>👋 Hi there, I'm Andrew Franklin!</h1>
-        <p>🎓 College Student | Competitive Programmer | Data Enthusiast</p>
-        <p>📍 Based at Muhlenberg College</p>
-      </div>
-    </div>
+  <header class="fade-slide-in">
+    <!-- Profile Headshot -->
+    <img src="https://muhlenbergsports.com/images/2024/8/25/FBfranklin24_qIZ37.jpg?width=300"
+         alt="Andrew Franklin Headshot"
+         class="profile-img" />
+
+    <h1>👋 Hi there, I'm Andrew Franklin!</h1>
+    <p>🎓 College Student | Competitive Programmer | Data Enthusiast</p>
+    <p>📍 Based at Muhlenberg College</p>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <section class="about">
+    <h2>🧑‍💻 About Me</h2>
+    <p>
+      I'm Andrew Franklin, a college student at Muhlenberg College with a passion for learning, competitive programming, and data science. 
+      I'm currently pursuing a degree in Computer Science, where I dive deep into areas like Machine Learning, Data Engineering, and Cloud Computing. 
+      Outside of academics, I am a proud member of the Muhlenberg Football and Wrestling teams, where I apply my teamwork, discipline, and problem-solving skills both on and off the field. 
+      My current projects include building an IoT smart mirror and developing sports predictive analytics models using AI and ML.
+    </p>
+    <p>
+      In my free time, I enjoy exercising at the gym, fishing in the wilderness, and playing spikeball or cornhole with friends. 
+      One fun fact about me is that I can do a back handspring!
+    </p>
+  </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="fade-in-delay">
-      <div class="container">
-        <h2>🧑‍💻 About Me</h2>
-        <ul>
-          <li>🔭 <strong>Currently Working On:</strong>
-            <ul>
-              <li>Smart Mirror (IoT, CV, AI & ML)</li>
-              <li>Sports Predictive Analysis (ML & AI)</li>
-              <li>Mentoring and leading my Competitive Programming Team (LeetCode)</li>
-            </ul>
-          </li>
-          <li>🌱 <strong>Currently Learning:</strong>
-            <ul>
-              <li>Data Analytics</li>
-              <li>Data Engineering</li>
-              <li>Data Science</li>
-              <li>Docker</li>
-              <li>Cloud Computing</li>
-            </ul>
-          </li>
-          <li>💡 Fun fact: I never back down from a problem that needs cracking!</li>
-        </ul>
-      </div>
-    </section>
+  <section class="skills fade-in-delay">
+    <h2>🛠️ Tech Stack</h2>
+    <table>
+      <tr>
+        <th>Languages</th>
+        <th>Frameworks / Libraries</th>
+        <th>Tools / Platforms</th>
+      </tr>
+      <tr>
+        <td>Python, Java, JavaScript, SQL</td>
+        <td>TensorFlow, PyTorch, OpenCV, Pandas, SciKit-Learn</td>
+        <td>Git, GitHub, Docker, AWS, GCP, Power BI</td>
+      </tr>
+    </table>
+  </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="fade-in-delay">
-      <div class="container">
-        <h2>🛠️ Tech Stack</h2>
-        <div class="skills-wrapper">
-          <article class="skill-category">
-            <h3>Languages</h3>
-            <p>Python, Java, JavaScript, SQL</p>
-          </article>
+  <section class="projects fade-in-delay">
+    <h2>📂 Projects</h2>
 
-          <article class="skill-category">
-            <h3>Frameworks / Libraries</h3>
-            <p>TensorFlow, PyTorch, OpenCV, Pandas, SciKit-Learn</p>
-          </article>
-
-          <article class="skill-category">
-            <h3>Tools / Platforms</h3>
-            <p>Git, GitHub, Docker, AWS, GCP, Power BI</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="fade-in-delay">
-      <div class="container">
-        <h2>📂 Projects</h2>
-
-        <article class="project">
-          <h3>🪞 Smart Mirror</h3>
-          <p>An IoT mirror powered by CV and AI/ML that displays weather, calendar, and more.</p>
-          <p><strong>Tech Stack:</strong> Python, OpenCV, TensorFlow, Raspberry Pi</p>
-          <a href="https://github.com/afranklin31520/mirrage" target="_blank">View on GitHub</a>
-        </article>
-
-        <article class="project">
-          <h3>📊 Sports Predictive Analysis</h3>
-          <p>Machine learning and AI models predicting game outcomes using player/team statistics.</p>
-          <p><strong>Tech Stack:</strong> Python, Pandas, SciKit-Learn, TensorFlow</p>
-        </article>
-
-        <article class="project">
-          <h3>📈 Mules Sports Analytics Dashboard</h3>
-          <p>Unified athletic data from Muhlenberg College (2012–2025) into an interactive Power BI dashboard.</p>
-          <p><strong>Tech Stack:</strong> Python, Requests, Pandas, NumPy, DAX, Power BI</p>
-          <a href="https://github.com/afranklin31520/mules-athletics" target="_blank">View on GitHub</a>
-        </article>
-
-        <article class="project">
-          <h3>⚙️ Competitive Programming on LeetCode</h3>
-          <p>Practicing algorithms and data structures for competitions on LeetCode.</p>
-          <a href="https://leetcode.com/u/afranklin31520" target="_blank">View My LeetCode</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="fade-in-delay">
-      <div class="container">
-        <h2>📫 How to Reach Me</h2>
-        <ul>
-          <li>Email: <a href="mailto:afranklin31520@gmail.com">afranklin31520@gmail.com</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-franklin-604123223/" target="_blank">andrew-franklin</a></li>
-          <li>GitHub: <a href="https://github.com/afranklin31520" target="_blank">@afranklin31520</a></li>
-        </ul>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="fade-in-delay">
-    <div class="container">
-      <p>“The expert in anything was once a beginner.”</p>
+    <div class="project">
+      <h3>🪞 Smart Mirror</h3>
+      <p>IoT mirror with CV and AI/ML. Displays weather, calendar, etc.</p>
+      <p><strong>Tech:</strong> Python, OpenCV, TensorFlow, Raspberry Pi</p>
+      <a href="https://github.com/afranklin31520/mirrage" target="_blank">View on GitHub</a>
     </div>
-  </footer>
-</body>
 
+    <div class="project">
+      <h3>📊 Sports Predictive Analysis</h3>
+      <p>ML and AI predicting game outcomes based on player/team data.</p>
+      <p><strong>Tech:</strong> Python, Pandas, SciKit-Learn, TensorFlow</p>
+    </div>
+
+    <div class="project">
+      <h3>📈 Mules Sports Analytics Dashboard</h3>
+      <p>Unified Muhlenberg's athletic data from 2012–2025 into one interactive dashboard.</p>
+      <p><strong>Tech:</strong> Python, Requests, Pandas, NumPy, DAX, Power BI</p>
+      <a href="https://github.com/afranklin31520/mules-athletics" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>⚙️ Competitive Programming on LeetCode</h3>
+      <p>Solving algorithms and data structure problems for competitions.</p>
+      <a href="https://leetcode.com/u/afranklin31520" target="_blank">View My LeetCode</a>
+    </div>
+  </section>
+
+  <section class="contact fade-in-delay">
+    <h2>📫 How to Reach Me</h2>
+    <ul>
+      <li>Email: <a href="mailto:afranklin31520@gmail.com">afranklin31520@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-franklin-604123223/" target="_blank">andrew-franklin</a></li>
+      <li>GitHub: <a href="https://github.com/afranklin31520" target="_blank">@afranklin31520</a></li>
+    </ul>
+  </section>
+
+  <footer class="fade-in-delay">
+    <p>“The expert in anything was once a beginner.”</p>
+  </footer>
+
+</body>
 </html>
