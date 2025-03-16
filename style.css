@@ -1,183 +1,139 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #222;
+    color: #fff;
   }
   
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #eeeeee;
-    line-height: 1.6;
-    padding: 20px;
+  h1, h2, h3 {
+    color: #fff;
   }
   
-  /* Header */
-  header {
-    text-align: center;
-    margin-bottom: 40px;
+  a {
+    color: #00BFFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
   
   /* Profile Image */
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #00adb5;
-    box-shadow: 0 0 20px rgba(0, 173, 181, 0.7);
-    margin-bottom: 20px;
-    transition: transform 0.5s ease;
+    border: 3px solid #fff;
+    display: block;
+    margin: 20px auto;
   }
   
-  .profile-img:hover {
-    transform: scale(1.05);
+  /* Fade-in and slide-in animations */
+  .fade-slide-in {
+    animation: slideIn 1.5s ease-out forwards;
   }
   
-  /* Headings */
-  h1, h2, h3 {
-    color: #00adb5;
+  .fade-in-delay {
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
   }
   
-  h1 {
-    font-size: 2.5rem;
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
-  h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  h3 {
-    font-size: 1.3rem;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   
   /* Sections */
+  header {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
   section {
-    margin-bottom: 40px;
+    margin: 50px 10%;
   }
   
-  ul {
-    list-style: none;
-    padding-left: 0;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
   }
   
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Tables */
+  /* Tech Stack Table */
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  table, th, td {
-    border: 1px solid #00adb5;
+    margin: 20px 0;
+    background-color: #333;
   }
   
   th, td {
-    padding: 12px;
-    text-align: left;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #444;
   }
   
   th {
-    background-color: #393e46;
+    background-color: #555;
   }
   
   td {
-    background-color: #222831;
+    background-color: #444;
   }
   
-  /* Projects */
+  tr:nth-child(even) {
+    background-color: #555;
+  }
+  
+  /* Project Styling */
   .project {
-    background-color: #222831;
+    background-color: #333;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
   }
   
-  .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 173, 181, 0.3);
+  .project h3 {
+    font-size: 1.5rem;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
   
   .project a {
-    color: #00adb5;
-    text-decoration: none;
+    display: inline-block;
+    background-color: #00BFFF;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
   }
   
   .project a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Contact Section */
-  .contact ul li {
-    margin-bottom: 8px;
-  }
-  
-  .contact a {
-    color: #00adb5;
-    text-decoration: none;
-  }
-  
-  .contact a:hover {
-    text-decoration: underline;
+    background-color: #0077B6;
   }
   
   /* Footer */
   footer {
     text-align: center;
     padding: 20px;
-    border-top: 1px solid #393e46;
-    font-style: italic;
-  }
-  
-  /* --- Animations --- */
-  
-  /* Page load fade */
-  body.page-load {
-    opacity: 0;
-    animation: bodyFadeIn 1s ease-out forwards;
-  }
-  
-  /* Slide in header */
-  header.fade-slide-in {
-    opacity: 0;
-    transform: translateY(-50px);
-    animation: fadeSlideIn 1s ease-out forwards 0.5s;
-  }
-  
-  /* Fade in sections and footer with delay */
-  .about.fade-in-delay,
-  .skills.fade-in-delay,
-  .projects.fade-in-delay,
-  .contact.fade-in-delay,
-  footer.fade-in-delay {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards 1.2s;
-  }
-  
-  /* Keyframes */
-  @keyframes bodyFadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeSlideIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+    background-color: #222;
+    margin-top: 50px;
   }
   
